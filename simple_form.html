@@ -1,0 +1,97 @@
+<html>
+ <head>
+   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <style>
+   body {
+    background-color: #ece7ff;
+    color: #6922b5;
+    font-family: 'Indie Flower', cursive, Helvetica, sans-serif;
+	align: center;
+   }
+   
+   td {
+    font-size: 20;
+	font-weight: bold;
+   }
+   
+   .center {
+    align: center;
+   }
+   
+   .button {
+     background-color: #6922b5;
+	 border-radius: 16px;
+	 border-style: dotted;
+	 color: white;
+	 font-family: 'Indie Flower', cursive, Helvetica, sans-serif;
+	 font-weight: bold;
+	 font-size: 20;
+     padding: 15px 32px;
+     text-align: center;
+	 }
+	 
+	textarea {
+	 border-radius: 16px;
+	}
+	
+	input, select {
+	 border-radius: 6px;
+	}
+	
+	#overlay {
+      width: 600px;
+      margin: 10% auto;
+      display: block;
+      padding: 2%;
+      height: 450px;
+      background-color: rgba(255, 255, 255, 0.9);
+	  border-style: dotted;
+	  border: 5;
+	  border-color #6922b5; 
+      border-radius: 40px;
+      text-align: center;
+	}
+	
+	
+  </style>
+  <title> Form 2 </title>
+ </head> 
+ <body>
+  <section id="overlay">
+   <h1>
+    Contactformulier
+   </h1>
+   <form action="process_simple_form.php" method="POST">
+    <table>
+     <tr>
+	  <td>Gender: <br /><select name="gender">
+	   <option value=" "> </option>
+	   <option value="Man">Man</option>
+       <option value="Vrouw">Vrouw</option>
+       <option value="Anders">Anders</option>
+	   <option value="Wil niet zeggen">Wil niet zeggen</option>
+      </select>
+	  <td>Voornaam: <em>*</em><br /><input type="text" name="voornaam"  size="25" placeholder="Pluk" pattern="[A-Za-z -']+" /></td>
+	  <td>Achternaam: <em>*</em><br /><input type="text" name="achternaam"   size="25" placeholder="van de Petteflet" pattern="[A-Za-z -']+" /></td>
+	 </tr>
+	 <tr>
+	  <td>Straat: <em>*</em><br /><input type="text" name="straat"   size="25" placeholder="Straat" pattern="[A-Za-z -']+" /></td>
+	  <td>Huisnummer: <em>*</em><br /><input type="text" name="huisnummer"   size="25" placeholder="1" pattern="[0-9]+" /></td>
+	  <td>Toevoeging: <br /><input type="text" name="toevoeging" size="25" placeholder="A" pattern="[A-Z0-9-]+" /></td>
+	 </tr>
+	 <tr>
+	  <td>Postcode: <em>*</em><br /><input type="text" name="postcode"   size="25" placeholder="1111AA" pattern="[0-9]{4}[A-Z]{2}" /></td>
+	  <td>Woonplaats: <em>*</em><br /><input type="text" name="woonplaats"   size="25" placeholder="Woonplaats" pattern="[A-Za-z -']+" /></td>
+	  <td>Telefoonnummer: <em>*</em><br /><input type="tel" name="telnr"   size="25" placeholder="0123456789" pattern="[0-9]{10}" /></td>
+	 </tr>
+	 <tr>
+	  <td colspan="3" class="center">Opmerkingen: <br />
+	  <textarea name="opmerkingen" rows="5" cols="80"></textarea></td>
+    </table>
+    <p>
+    <input type="submit" value="Verstuur" class="button" />
+    </p>
+   </form>
+  </section>
+ </body>
+</html>
