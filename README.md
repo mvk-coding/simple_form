@@ -3,7 +3,7 @@
 
 # Simple form  
 ---
-Part 1 of 4 of a project for Educom to go from a simple form to a form connected to a database.
+Part 1 of 5 of a project for Educom to go from a simple form to a form connected to a database.
 For this part a simple form had to be created where a customer could leave their contact information and any comment they had. At this stage of the project the filled in data was simply showed afterwards. The form is written in Dutch.
 
 ## Screenshots
