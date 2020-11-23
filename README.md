@@ -10,7 +10,7 @@ For this part a simple form had to be created where a customer could leave their
 
 <img src="https://user-images.githubusercontent.com/72911560/99963407-09ee0100-2d92-11eb-8b7e-7d72f9ad20f9.JPG" width="200"> <img src="https://user-images.githubusercontent.com/72911560/99963413-0c505b00-2d92-11eb-934e-39cef6082513.JPG" width="200"> <img src="https://user-images.githubusercontent.com/72911560/99963420-0e1a1e80-2d92-11eb-8159-aecfb64d1a00.JPG" width="200">
 
-## Technologieën
+## Technologies
 
 The form is written in HTML, styled with CSS and by a POST the data is send to a PHP file to check whether every field has a value. This was done using XAMPP as Apache. 
 
